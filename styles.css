@@ -260,13 +260,15 @@ nav{
 .sec-2wrap{
     display: flex;
     padding: 80px 0px;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
 }
 .build{
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 40px;
+    gap: 100px;
     color: white;
 }
 .build-top{
@@ -292,7 +294,145 @@ nav{
     font-weight: 400;
     font-size: 22px;
     width: 100%; 
-    max-width: 300;
+    max-width: 590px;
+    font-family: "google sans";
+}
+.build-bottom{
+    display: flex;
+    flex-direction: column;
+    font-family: "jetBrains Mono";
+    padding: 0px 10px;
+}
+.build-links{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+
+}
+.bl{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    border-bottom: 1px solid #323232;
+    padding: 15px 0px;
+}
+.bs{
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+    padding: 15px 0px;
+}
+.right-arrow{
+    margin-left: auto;
+}
+.right-arrow img{
+    transition: transform 0.3s ease;
+}
+
+.bl:hover .right-arrow img,
+.bs:hover .right-arrow img{
+    transform: translateX(5px);
+}
+.build-btn{
+    padding: 50px 0px;
+}
+.run{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 160px;
+    color: white;
+    border-left: 1px solid grey; 
+    padding-left: 40px;
+}
+.run-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.run-top h2{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: monospace;
+    line-height: 15px;
+}
+.bold{
+    font-size: 26px;
+    font-weight: 700;
+    font-family:  google sans,Roboto,Arial,sans-serif;
+    line-height: 26px;
+    width: 100%;
+    max-width: 430px;
+}
+.light{
+    font-weight: 400;
+    font-size: 22px;
+    width: 100%; 
+    max-width: 600px;
+}
+.run-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "jetBrains Mono";
+}
+.run-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 60px;
+}
+.rl{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #323232;
+    padding: 15px 0px;
+}
+.right-arrow{
+    margin-left: auto;
+}
+.rc{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+.right-arrow img{
+    transition: transform 0.3s ease;
+}
+.rl:hover .right-arrow img,
+.rc:hover .right-arrow img{
+    transform: translate(5px);
+}
+.run-btn{
+    padding: 20px;
+}
+
+.build-project{
+    border: 1px solid #ff9100;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 6px 10px;
+    width: 100%;
+    max-width: 200px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.build-project:hover{
+    background-color: #ff9100;
 }
 
 @media(max-width: 1024px){
@@ -497,4 +637,54 @@ nav{
 .prototype h3{
     font-weight: 400;   
 }  
+.sec-2wrap{
+    display: flex;
+    flex-direction: column;
+}
+.build{
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+.build-top h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.highlight{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.subtle{
+    font-size: 20px;
+    font-weight: 300;
+}
+.bl{
+    font-size: 12px;
+    font-weight: bold;
+}
+.bs{
+    font-size: 12px;
+    font-weight: bold;
+}
+.run{
+    text-align: center;
+    justify-content: center;
+    padding-left: 0;
+    padding: 0px 30px;
+}
+.run-top h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+.bold{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.light{
+    font-size: 20px;
+    font-weight: 300;
+}
+
 } 
