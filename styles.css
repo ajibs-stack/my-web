@@ -346,7 +346,7 @@ nav{
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 160px;
+    gap: 130px;
     color: white;
     border-left: 1px solid grey; 
     padding-left: 40px;
@@ -417,7 +417,7 @@ nav{
     transform: translate(5px);
 }
 .run-btn{
-    padding: 20px;
+    padding: 35px 0px;
 }
 
 .build-project{
@@ -434,7 +434,38 @@ nav{
 .build-project:hover{
     background-color: #ff9100;
 }
-
+.generative-ai{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 20px 60px;
+}
+.ga-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    justify-content:center;
+    border-radius: 30px;
+    background-image: url(/images/blue-orange.png);
+    background-position: center;
+    background-size: cover;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-color: ;
+    padding: 30px 40px;
+    text-align: center;
+}
+.card-img{
+    background-color: white;
+    border-radius: 40px;
+    padding: 15px 15px;
+}
 @media(max-width: 1024px){
 nav{ 
     padding: 10px 20px;
@@ -475,7 +506,15 @@ nav{
 }
 .prototype h3{
     font-weight: 300;   
-}  
+} 
+.build{
+    padding-left: 30px;
+} 
+.run{
+    padding-right: 30px;
+    gap: 150px;
+
+}
 }
 @media(max-width: 850px){
     nav{ 
@@ -578,7 +617,7 @@ font-size: 16px;
     font-weight: bold;
 }
 .run{
-    gap: 120px;
+    gap: 80px;
     padding-right: 30px;
 }
 .run-top h2{
@@ -601,6 +640,10 @@ font-size: 16px;
 .rc{
     font-size: 12px;
     font-weight: bold;
+}
+.run-btn{
+    padding-top: 30px;
+}
 }
 
 @media(max-width: 506px){
