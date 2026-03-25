@@ -1,4 +1,4 @@
-*{
+    *{
     margin: 0;
     box-sizing: border-box;
 }
@@ -434,37 +434,102 @@ nav{
 .build-project:hover{
     background-color: #ff9100;
 }
+.sec-3{
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center
+}
+.section3-wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 30px;
+    justify-content: center;
+    margin: 0 auto; 
+}
 .generative-ai{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    justify-content: center;
     align-items: center;
-    padding: 20px 60px;
+    padding: 60px 0px;
 }
 .ga-left{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
     padding: 40px;
     justify-content:center;
     border-radius: 30px;
     background-image: url(/images/blue-orange.png);
     background-position: center;
     background-size: cover;
+    width: 800px;
 }
 .card{
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    background-color: ;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
     padding: 30px 40px;
     text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 22px;
+    font-family: "Google sans", sans-serif;
+    transition: background-color 0.4 ease;
+}
+.card:hover{
+    background-color: white;
+
 }
 .card-img{
     background-color: white;
     border-radius: 40px;
     padding: 15px 15px;
+}
+.ga-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+.label{
+    font-family: "jetBrains Mono", monospace;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 15px;
+}
+.ga-right h2{
+    font-family: "Google sans", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    width: 100%;
+    max-width: 430px;
+}
+.ai-btn{
+    background-color: white;
+    
+}
+.ai-btn2{
+    border: 2px solid #eca03d;
+    border-radius: 20px;
+    padding: 5px 40px;
+    background-color: white;
+    font-family: "Google sans", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 18px;
+
+}
+.ai-btn2:hover{
+    background-color: #ffa000;
 }
 @media(max-width: 1024px){
 nav{ 
@@ -778,5 +843,18 @@ nav{
     font-size: 20px;
     font-weight: 300;
 }
+.generative-ai{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.ga-left{
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
 
+}
 } 
