@@ -464,7 +464,8 @@ nav{
     background-image: url(/images/blue-orange.png);
     background-position: center;
     background-size: cover;
-    width: 800px;
+    width: 100%;
+    max-width: 1000px;
 }
 .card{
     display: flex;
@@ -579,6 +580,26 @@ nav{
     padding-right: 30px;
     gap: 150px;
 
+}
+.generative-ai{
+    display: flex;
+    flex-direction: column;
+}
+.ga-right{
+    max-width: 700px;
+    align-items: center;
+    gap: 25px;
+}
+.ga-right h2{
+    font-weight: 700;
+    font-size: 29px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.ai-btn{
+    display: flex;
+    align-items: center;
 }
 }
 @media(max-width: 850px){
@@ -708,6 +729,34 @@ font-size: 16px;
 }
 .run-btn{
     padding-top: 30px;
+}
+.sec-3{
+    padding-top: 20px;
+}
+.generative-ai{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40;
+    align-items: center;
+}
+.ga-left{
+    overflow: hidden;
+}
+.ga-right{
+    max-width: 700px;
+    align-items: center;
+    gap: 25px;
+}
+.ga-right h2{
+    font-weight: 500;
+    font-size: 29px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.ai-btn{
+    display: flex;
+    align-items: center;
 }
 }
 
