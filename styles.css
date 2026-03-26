@@ -899,7 +899,7 @@ nav{
 .ga-left{
     display: flex;
     flex-direction:column;
-    width: 400px;
+    width: 330px;
 }
 .card{
     display: flex;
