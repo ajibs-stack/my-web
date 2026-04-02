@@ -1,4 +1,10 @@
-    * {
+   html, body {
+    width: 100%;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+   * {
         margin: 0;
         box-sizing: border-box;
     }
@@ -1048,8 +1054,28 @@
             gap: 70px;
             padding: 0px 50px;
         }
-    }
-
+.extension-cards{
+    align-items: center;
+}
+}
+.cards {
+    flex: flex;         
+    max-width: 300px;
+    padding: 25px 35px;
+}
+.generative-ai2{
+    display: flex;
+    flex-direction: column;
+}
+.extension h2{
+font-size: 20px; 
+line-height: 30px;
+font-weight: 500;   
+}
+.extension{
+    text-align: center;
+    gap: 10px;
+}
     @media(max-width: 506px) {
         nav {
             padding: 10px 15px;
